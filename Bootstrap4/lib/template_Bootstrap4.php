@@ -7,9 +7,6 @@
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <meta name="description" content="">
 <meta name="author" content="">
-<!--    <link rel="icon" href="/Phplib/PageGen/Templates/Bootstrap4favicon.ico">-->
-
-
 
 <title><?php echo($this->opts['title']);?></title>
 
@@ -49,9 +46,8 @@
 
 
   <?php
-
 echo ($this->opts['js_include']);
-echo ($this->opts['additional_footer']);
-?>
-</body>
-</html>
+//echo ($this->opts['additional_footer']);
+  ?>
+  </body></html>
+

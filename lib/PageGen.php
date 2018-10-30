@@ -14,13 +14,20 @@ class PageGen
 
     // On init we need to start glomming the ob_start()
     private $opts;
-
+    //private $defaults = {
+        
+    
     public $content;
 
     function __construct($opts)
     {
         $this->opts = $opts;
-
+        
+        // So, IDK that I care or this is the best way to do it but having
+        // these indexes unset makes things unhappy when I barge in and use them 
+        // later.
+        
+        
         foreach ($opts['css'] as $css_file) {
             $this->opts['css_include'] = $this->opts['css_include'] . sprintf("    <link href=\"%s\" rel=\"stylesheet\">\n", $this->mstamp($css_file));
         }
